@@ -1,0 +1,2 @@
+# myawesome
+Modular AwesomeWM Configuration 
