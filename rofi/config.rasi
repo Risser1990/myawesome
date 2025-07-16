@@ -1,0 +1,104 @@
+configuration {
+  font: "JetBrainsMono Nerd Font 12";
+  location: 0;
+  width: 200px;
+  lines: 5;
+  timeout {
+    delay: 20;
+    action: "kb-cancel";
+  }
+  drun { display-name: ""; }
+  run { display-name: ""; }
+  window { display-name: ""; }
+}
+
+* {
+  border: 0;
+  margin: 0;
+  padding: 0;
+  spacing: 0;
+  background-color: #222222;
+  text-color: #f5a623;
+}
+
+window {
+  border: 2px;
+  border-color: #f5a623;
+  border-radius: 10px;
+  background-color: #222222;
+  width: 700px;
+  text-color: #f5a623;
+}
+
+mainbox {
+  children: [inputbar, listview];
+  background-color: #272822;
+  text-color: #f8f8f2;
+}
+
+inputbar {
+  background-color: #272822;
+  children: [prompt, entry];
+  border-radius: 6px;
+  padding: 4px 6px;
+}
+
+prompt {
+  background-color: inherit;
+  text-color: #a6e22e;
+  padding: 8px;
+}
+
+entry {
+  background-color: inherit;
+  text-color: #f8f8f2;
+  padding: 8px 4px;
+}
+
+listview {
+  border: 1px;
+  border-color: #ae81ff;
+  border-radius: 6px;
+  background-color: #222222;
+  padding: 3px;
+  lines: 5;
+  fixed-height: true;
+  text-color: #f8f8f2;
+}
+
+element {
+  children: [element-icon, element-text];
+  background-color: #222222;
+  text-color: #f5a623;
+  border-radius: 0;
+  padding: 0;
+  spacing: 0;
+}
+
+element-icon {
+  background-color: #222222;
+  text-color: #f5a623;
+  padding: 0;
+  margin: 0;
+  spacing: 0;
+}
+
+element-text {
+  background-color: #222222;
+  text-color: #f8f8f2;
+  padding: 6px 10px;
+  margin: 0;
+  spacing: 0;
+}
+
+element selected {
+  background-color: #a6e22e;
+  text-color: #f8f8f2;
+  padding: 0;
+  border-radius: 6px;
+}
+
+element-text selected {
+  background-color: #a6e22e;
+  text-color: #272822;
+}
